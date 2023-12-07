@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "route": "^0.2.5",
+    "Router": "^2.1.0"
+  }
+}
