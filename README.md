@@ -1,7 +1,7 @@
 # Hướng Dẫn Sử Dụng SmithWaterman_GPU
 ## Điều Kiện Set Up Trước Khi Chạy
 Để có thể chạy thành công ứng dụng, bạn cần thực hiện các bước set up sau:
-Cài đặt CUDA và trình biên dịch nvcc.
+Cài đặt CUDA và trình biên dịch nvcc. Xem hướng dẫn cài đặt chi tiết [Tại đây]([https://pages.github.com/](https://drive.google.com/file/d/116fM9du8O-RDzH_G_jkNObnTDc71Z5Kt/view?usp=sharing))
 
 ## Các Bước Cài Đặt và Chạy Code
 ### 1. Clone Repository:
@@ -32,6 +32,30 @@ node server.js
 cd web
 cd server
 npm install react-scripts --save
+```
+> [!WARNING]
+> Khi chạy inline code `npm install react-scripts --save`, nếu xảy ra lỗi tương tự như sau:
+```
+macbooks-MacBook-Pro-2:server macbook$ npm install react-scripts --save
+npm ERR! code EEXIST
+npm ERR! syscall mkdir
+npm ERR! path /Users/macbook/.npm/_cacache/content-v2/sha512/fd/b7
+npm ERR! errno EEXIST
+npm ERR! Invalid response body while trying to fetch https://registry.npmjs.org/mini-css-extract-plugin: EACCES: permission denied, mkdir '/Users/macbook/.npm/_cacache/content-v2/sha512/fd/b7'
+npm ERR! File exists: /Users/macbook/.npm/_cacache/content-v2/sha512/fd/b7
+npm ERR! Remove the existing file and try again, or run npm
+npm ERR! with --force to overwrite files recklessly.
+
+npm ERR! A complete log of this run can be found in: /Users/macbook/.npm/_logs/2023-12-08T07_40_24_327Z-debug-0.log
+macbooks-MacBook-Pro-2:server macbook$ 
+```
+- Lỗi này là do vấn đề quyền truy cập (permission denied) khi thực hiện lệnh npm install. Thông báo lỗi cụ thể là:
+`EACCES: permission denied, mkdir '/Users/macbook/.npm/_cacache/content-v2/sha512/fd/b7'`
+- Dưới đây là cách để giải quyết vấn đề này:
+
+   - Chạy npm với quyền đặc quyền: Sử dụng lệnh sudo để chạy npm với quyền đặc quyền. Tuy nhiên, cần lưu ý rằng việc này có thể tạo ra các vấn đề về quyền sở hữu trong thư mục .npm. Bạn có thể chạy lệnh sau:
+```
+sudo npm install react-scripts --save
 ```
 
 ### 4. Quay Trở Lại Thư Mục Web và Cài Đặt Dependencies Cho React App:
