@@ -72,7 +72,7 @@ npm start
 ### 6. Giao Diện Phần Ứng Dụng (APPLICATION):
 - Khi giao diện phần ứng dụng hiển thị, bạn sẽ thấy thông tin giới thiệu về ứng dụng và hướng dẫn chạy.
 
-   - Bước 1: Click vào "Choose File", chọn file test có sẵn trong folder của dự án hoặc tự tạo file test theo yêu cầu. File test là file chứa chuỗi ADN với các ký tự là các nucleotit.
+   - Bước 1: Click vào "Choose File", chọn file test có sẵn trong folder của dự án, file test có tên inline code `a.txt` hoặc inline code `b.txt` nằm trong thư mục SmithWaterman_GPU/src hoặc tự tạo file test theo yêu cầu. File test là file chứa chuỗi ADN với các ký tự là các nucleotit.
   
    - Bước 2: Sau khi hoàn tất chọn file, click vào "Run" để chạy thuật toán. Đợi khoảng 4-5 giây để màn hình hiển thị kết quả.
   
