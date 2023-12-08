@@ -15,15 +15,22 @@ git clone https://github.com/tklee-123/SmithWaterman_GPU.git
 - Mở folder vừa clone về trong VSCode.
 - Mở terminal trong VSCocde, di chuyển tới thư mục web:
 ```
-cd SmithWaterman_GPU/web
+cd web
 ```
 
 ### 3. Cài Đặt Dependencies Cho Server:
-- Di chuyển vào thư mục web/server và chạy các lệnh sau:
+- Di chuyển vào thư mục SmithWaterman_GPU/web/server và chạy các lệnh sau:
 ```
 cd server
 npm install express
 node server.js
+```
+- Sau khi chạy thành công lệnh inline code `node server.js`, terminal sẽ hiển thị:
+> Server running on port 8000
+- Tiếp theo, mở một terminal mới và di chuyển vào lại thư mục SmithWaterman_GPU/web/server
+```
+cd web
+cd server
 npm install react-scripts --save
 ```
 
