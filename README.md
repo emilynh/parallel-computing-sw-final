@@ -1,7 +1,7 @@
 # Hướng Dẫn Sử Dụng SmithWaterman_GPU
 ## Điều Kiện Set Up Trước Khi Chạy
 Để có thể chạy thành công ứng dụng, bạn cần thực hiện các bước set up sau:
-Cài đặt CUDA và trình biên dịch nvcc. Xem hướng dẫn cài đặt chi tiết [Tại đây]([https://pages.github.com/](https://drive.google.com/file/d/116fM9du8O-RDzH_G_jkNObnTDc71Z5Kt/view?usp=sharing))
+Cài đặt CUDA và trình biên dịch nvcc. Xem hướng dẫn cài đặt chi tiết [Tại đây](https://drive.google.com/file/d/116fM9du8O-RDzH_G_jkNObnTDc71Z5Kt/view?usp=sharing)
 
 ## Các Bước Cài Đặt và Chạy Code
 ### 1. Clone Repository:
